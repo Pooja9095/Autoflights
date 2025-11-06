@@ -3,9 +3,12 @@
 **Live Demo:** [AutoFlights on Hugging Face Spaces](https://huggingface.co/spaces/Pooja-Nigam/autoflights)
 
 AutoFlights is a full-stack, end-to-end web application that scrapes live flight listings, analyzes them, and produces clear summaries with a touch of humor.
-It combines an intelligent AI backend with a simple, modern React frontend, built for fast and automated travel insights.
+It combines an intelligent AI backend with a modern React frontend, built for fast and automated travel insights.
 
-AutoFlights automatically fetches flight details from Google Flights using Playwright and Serper API, processes the data, and summarizes the top results using a Groq LLM integrated with Autogen AI Agents.
+AutoFlights automatically fetches available flight from Google Flights using Playwright and Serper API, processes the results, and summarizes them using a Groq LLM integrated with Autogen AI Agents.
+
+The app specifically looks for flights between any two cities for a selected month and year (Economy class, 1 traveler) and extracts the top three cheapest flight options, along with durations, airlines, and stop details.
+
 The system is designed to demonstrate how real-world data extraction, automation, and AI summarization can work together in a single deployable project.
 
 ## Features
